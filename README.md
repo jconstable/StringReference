@@ -3,7 +3,8 @@ Use small reference handles instead of strings, to de-duplicate string memory in
 
 One drawback is that once a string is cached, it remains in memory for the duration of the application.
 
-```void Example()
+```
+void Example()
 {
     StringReference r = "myString";
 
@@ -22,4 +23,5 @@ One drawback is that once a string is cached, it remains in memory for the durat
     StringReference r7 = "myString2";
     StringReference r8 = "myString2";
     print(string.Format("Num cached strings: {0}", StringReference.NumStringsStored())); // 2
-}```
+}
+```
