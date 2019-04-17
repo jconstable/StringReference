@@ -1,5 +1,5 @@
 # StringReference
-Use small reference handles instead of strings, to de-duplicate string memory when highly repetitive string data exists (JSON values, config classes, etc).
+Use small reference handles instead of strings, to de-duplicate string memory when highly repetitive string data exists (JSON values, config classes, etc). Please note that using this package requires the ECS package, obtained from the Package Manager.
 
 One drawback is that once a string is cached, it remains in memory for the duration of the application.
 
